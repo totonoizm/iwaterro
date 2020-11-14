@@ -1,0 +1,27 @@
+      <div class="post-image">
+        <%= attachment_image_tag @post_gym, :image %>
+      </div>
+    </div>
+    <div class="post-content">
+      <h2 class="post-title"><%= @post_gym.gym_name %></h2>
+      <ul class="meta-info-cells v4 float-wrapper">
+        <li>
+          <i class="fa fa-user"></i>By<a href="#">
+            <%= @post_gym.user.name %></a>
+        </li>
+        <li>
+          <i class="fa fa-calendar"></i><%= @post_gym.created_at.strftime('%Y/%m/%d') %>
+        </li>
+        <li>
+          <i class="fa fa-heart"></i>
+          <a href="#">202 いいね</a>
+        </li>
+        <li>
+          <i class="fa fa-comment"></i>
+          <a href="#comments">4</a>
+        </li>
+      </ul>
+      <div class="post-content-inner mt-20">
+        <p><%= @post_gym.caption %></p>
+      </div>
+    </div>

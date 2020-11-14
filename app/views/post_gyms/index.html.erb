@@ -1,0 +1,10 @@
+<% @post_gyms.each do |post_gym| %>
+  <%= attachment_image_tag post_gym, :image %><br>
+  <%= link_to post_gym_path(post_gym.id) do %>
+    <%= post_gym.gym_name %><br>
+  <% end %>
+  <%= post_gym.caption %><br>
+  <%= post_gym.user.name %><br>
+
+<% end %>
+
