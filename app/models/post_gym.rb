@@ -1,0 +1,2 @@
+class PostGym < ApplicationRecord
+end
